@@ -4,16 +4,34 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{99AC4221-3180-43D1-B828-A12884E1F688}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\TODO.txt = ..\..\..\..\..\..\TODO.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", "{7AEC6EAE-E37C-4230-832D-5D04376325D7}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\TODO.txt = ..\..\..\..\..\..\TODO.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{C60C0936-A5F8-427D-B979-64DDC5EFA35E}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\TODO.txt = ..\..\..\..\..\..\TODO.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InversionOfControl", "InversionOfControl", "{12CB1DB5-FE96-4A08-8173-9DE37E9EE92B}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\TODO.txt = ..\..\..\..\..\..\TODO.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{F4CEFB58-C1FD-4C9A-8E55-D085EEC7D49B}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\TODO.txt = ..\..\..\..\..\..\TODO.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{90C756DC-5844-442E-8251-3E39A2B94617}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\TODO.txt = ..\..\..\..\..\..\TODO.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
