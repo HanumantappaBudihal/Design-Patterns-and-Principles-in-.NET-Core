@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.SOLIDPrinciples.SingleResponsibility", "Hexagonal.SOLIDPrinciples.SingleResponsibility\Hexagonal.SOLIDPrinciples.SingleResponsibility.csproj", "{2F7C2035-7BB0-462B-98D0-99759C3C0045}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.SOLIDPrinciples.SingleResponsibility", "Hexagonal.SOLIDPrinciples.SingleResponsibility\Hexagonal.SOLIDPrinciples.SingleResponsibility.csproj", "{2F7C2035-7BB0-462B-98D0-99759C3C0045}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.SOLIDPrinciples.OpenClosed", "Hexagonal.SOLIDPrinciples.OpenClosed\Hexagonal.SOLIDPrinciples.OpenClosed.csproj", "{1BBD8F24-0BCC-45F4-B6A2-4F26E0600E2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.SOLIDPrinciples.OpenClosed", "Hexagonal.SOLIDPrinciples.OpenClosed\Hexagonal.SOLIDPrinciples.OpenClosed.csproj", "{1BBD8F24-0BCC-45F4-B6A2-4F26E0600E2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.SOLIDPrinciples.LiskovSubstitution", "Hexagonal.SOLIDPrinciples.LiskovSubstitution\Hexagonal.SOLIDPrinciples.LiskovSubstitution.csproj", "{2CEDCE38-A035-4B26-8703-69B60B37502C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.SOLIDPrinciples.LiskovSubstitution", "Hexagonal.SOLIDPrinciples.LiskovSubstitution\Hexagonal.SOLIDPrinciples.LiskovSubstitution.csproj", "{2CEDCE38-A035-4B26-8703-69B60B37502C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.SOLIDPrinciples.InterfaceSegregation", "Hexagonal.SOLIDPrinciples.InterfaceSegregation\Hexagonal.SOLIDPrinciples.InterfaceSegregation.csproj", "{F16AC5E7-C2BB-4C16-B79E-0DF9E633EA02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.SOLIDPrinciples.InterfaceSegregation", "Hexagonal.SOLIDPrinciples.InterfaceSegregation\Hexagonal.SOLIDPrinciples.InterfaceSegregation.csproj", "{F16AC5E7-C2BB-4C16-B79E-0DF9E633EA02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.SOLIDPrinciples.DependencyInversion", "Hexagonal.SOLIDPrinciples.DependencyInversion\Hexagonal.SOLIDPrinciples.DependencyInversion.csproj", "{A65D8465-E0CB-40A1-95F3-0CF2622C86EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.SOLIDPrinciples.DependencyInversion", "Hexagonal.SOLIDPrinciples.DependencyInversion\Hexagonal.SOLIDPrinciples.DependencyInversion.csproj", "{A65D8465-E0CB-40A1-95F3-0CF2622C86EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
