@@ -1,4 +1,5 @@
-﻿using Hexagonal.DesignPatterns.Factory.Interfaces;
+﻿using Hexagonal.DesignPatterns.Factory.enums;
+using Hexagonal.DesignPatterns.Factory.Interfaces;
 using System;
 
 namespace Hexagonal.DesignPatterns.Factory
@@ -11,7 +12,7 @@ namespace Hexagonal.DesignPatterns.Factory
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Factory Design , This factory desing pattern implementation");
-            ICreditCard cardDetails = CreditCardFactory.GetCreditCard("Platinum");
+            ICreditCard cardDetails = CreditCardFactory.GetCreditCard(CreditCardType.Platinum);
 
             if(cardDetails !=null)
             {
