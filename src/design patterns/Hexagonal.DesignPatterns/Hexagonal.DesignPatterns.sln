@@ -33,7 +33,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", 
 		..\..\..\..\..\..\TODO.txt = ..\..\..\..\..\..\TODO.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.DesignPatterns.Behavioral", "Hexagonal.DesignPatterns.Behavioral\Hexagonal.DesignPatterns.Behavioral.csproj", "{B2003B83-61B5-4F57-9068-C99A671BC154}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.DesignPatterns.Behavioral", "Hexagonal.DesignPatterns.Behavioral\Hexagonal.DesignPatterns.Behavioral.csproj", "{B2003B83-61B5-4F57-9068-C99A671BC154}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.DesignPatterns.Factory", "FactoryDesignPattern\Hexagonal.DesignPatterns.Factory.csproj", "{0A8592D4-772F-4844-BC45-0E140A5B6263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.DesignPatterns.FactoryMethod", "Hexagonal.DesignPattern.FactoryMethod\Hexagonal.DesignPatterns.FactoryMethod.csproj", "{BFB46EA2-EC2E-4E5C-9C67-B1833B26A959}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,12 +49,22 @@ Global
 		{B2003B83-61B5-4F57-9068-C99A671BC154}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2003B83-61B5-4F57-9068-C99A671BC154}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2003B83-61B5-4F57-9068-C99A671BC154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A8592D4-772F-4844-BC45-0E140A5B6263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8592D4-772F-4844-BC45-0E140A5B6263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8592D4-772F-4844-BC45-0E140A5B6263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8592D4-772F-4844-BC45-0E140A5B6263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB46EA2-EC2E-4E5C-9C67-B1833B26A959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB46EA2-EC2E-4E5C-9C67-B1833B26A959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB46EA2-EC2E-4E5C-9C67-B1833B26A959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB46EA2-EC2E-4E5C-9C67-B1833B26A959}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B2003B83-61B5-4F57-9068-C99A671BC154} = {C60C0936-A5F8-427D-B979-64DDC5EFA35E}
+		{0A8592D4-772F-4844-BC45-0E140A5B6263} = {99AC4221-3180-43D1-B828-A12884E1F688}
+		{BFB46EA2-EC2E-4E5C-9C67-B1833B26A959} = {99AC4221-3180-43D1-B828-A12884E1F688}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F82E86A9-7FB6-4C4B-AC90-268C6707A8DC}
