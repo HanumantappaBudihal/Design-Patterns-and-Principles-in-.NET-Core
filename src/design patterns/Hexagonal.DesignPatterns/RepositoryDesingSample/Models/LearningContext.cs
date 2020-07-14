@@ -16,7 +16,7 @@ namespace RepositoryDesingSample.Models
         {
         }
 
-        public virtual DbSet<IEmployee> Employee { get; set; }
+        public virtual DbSet<IEmployee> Employees { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

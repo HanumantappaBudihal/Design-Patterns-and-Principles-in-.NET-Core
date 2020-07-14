@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -12,7 +8,7 @@ using RepositoryDesingSample.Interfaces.Entities;
 using RepositoryDesingSample.Interfaces.Repository;
 using RepositoryDesingSample.Models;
 using RepositoryDesingSample.Models.Entities;
-using RepositoryDesingSample.Models.Repository;
+using RepositoryDesingSample.Repository;
 
 namespace RepositoryDesingSample
 {
@@ -21,14 +17,16 @@ namespace RepositoryDesingSample
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-        }      
+        }
 
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<LearningContext, LearningContext>();
+            // Register the db context configuration file
+            services.AddDbContext<LearningContext>(ServiceLifetime.Transient);
+
             services.AddScoped<IEmployee, Employee>();
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 
