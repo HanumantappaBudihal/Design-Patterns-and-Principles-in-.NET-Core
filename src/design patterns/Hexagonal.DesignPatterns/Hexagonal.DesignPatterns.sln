@@ -38,6 +38,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.DesignPatterns.Fa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.DesignPatterns.FactoryMethod", "Hexagonal.DesignPatterns.FactoryMethod\Hexagonal.DesignPatterns.FactoryMethod.csproj", "{AE90E192-A63F-4281-BF95-DFFEC1F9AA0F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{28E2D430-BA16-47A2-8E75-D65B8D46C185}"
+	ProjectSection(SolutionItems) = preProject
+		1.Employee.sql = 1.Employee.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +74,7 @@ Global
 		{F4CD29E5-BB9F-4E03-8074-BC38668DF366} = {99AC4221-3180-43D1-B828-A12884E1F688}
 		{33568AE5-B287-4A29-803C-36D961C28C7C} = {99AC4221-3180-43D1-B828-A12884E1F688}
 		{AE90E192-A63F-4281-BF95-DFFEC1F9AA0F} = {99AC4221-3180-43D1-B828-A12884E1F688}
+		{28E2D430-BA16-47A2-8E75-D65B8D46C185} = {90C756DC-5844-442E-8251-3E39A2B94617}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F82E86A9-7FB6-4C4B-AC90-268C6707A8DC}
