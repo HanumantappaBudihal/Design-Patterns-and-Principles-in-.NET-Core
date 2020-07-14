@@ -43,6 +43,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{28E2D430-BA1
 		1.Employee.sql = 1.Employee.sql
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryDesingSample", "RepositoryDesingSample\RepositoryDesingSample.csproj", "{AAFFF676-5493-46D9-9463-3D85449D46C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{AE90E192-A63F-4281-BF95-DFFEC1F9AA0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE90E192-A63F-4281-BF95-DFFEC1F9AA0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE90E192-A63F-4281-BF95-DFFEC1F9AA0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAFFF676-5493-46D9-9463-3D85449D46C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAFFF676-5493-46D9-9463-3D85449D46C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAFFF676-5493-46D9-9463-3D85449D46C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAFFF676-5493-46D9-9463-3D85449D46C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +81,7 @@ Global
 		{33568AE5-B287-4A29-803C-36D961C28C7C} = {99AC4221-3180-43D1-B828-A12884E1F688}
 		{AE90E192-A63F-4281-BF95-DFFEC1F9AA0F} = {99AC4221-3180-43D1-B828-A12884E1F688}
 		{28E2D430-BA16-47A2-8E75-D65B8D46C185} = {90C756DC-5844-442E-8251-3E39A2B94617}
+		{AAFFF676-5493-46D9-9463-3D85449D46C7} = {90C756DC-5844-442E-8251-3E39A2B94617}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F82E86A9-7FB6-4C4B-AC90-268C6707A8DC}
