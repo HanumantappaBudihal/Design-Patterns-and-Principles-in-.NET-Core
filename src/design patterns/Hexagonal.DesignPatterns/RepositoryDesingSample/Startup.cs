@@ -8,6 +8,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RepositoryDesingSample.Interfaces.Entities;
+using RepositoryDesingSample.Interfaces.Repository;
+using RepositoryDesingSample.Models;
+using RepositoryDesingSample.Models.Entities;
+using RepositoryDesingSample.Models.Repository;
 
 namespace RepositoryDesingSample
 {
@@ -16,13 +21,17 @@ namespace RepositoryDesingSample
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-        }
+        }      
 
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<LearningContext, LearningContext>();
+            services.AddScoped<IEmployee, Employee>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.

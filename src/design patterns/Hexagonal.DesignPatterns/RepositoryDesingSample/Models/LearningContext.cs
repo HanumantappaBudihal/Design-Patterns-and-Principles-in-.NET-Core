@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using RepositoryDesingSample.Interfaces.Entities;
 
 namespace RepositoryDesingSample.Models
 {
@@ -15,7 +16,7 @@ namespace RepositoryDesingSample.Models
         {
         }
 
-        public virtual DbSet<Employee> Employee { get; set; }
+        public virtual DbSet<IEmployee> Employee { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -28,7 +29,7 @@ namespace RepositoryDesingSample.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Employee>(entity =>
+            modelBuilder.Entity<IEmployee>(entity =>
             {
                 entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
 
