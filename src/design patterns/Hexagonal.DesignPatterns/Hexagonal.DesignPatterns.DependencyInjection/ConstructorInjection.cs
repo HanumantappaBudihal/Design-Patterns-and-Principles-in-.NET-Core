@@ -44,7 +44,8 @@ namespace Hexagonal.DesignPatterns.DependencyInjection
 
     public class ConstructorInjection
     {
-        static void Main(string[] args)
+        //Should execute as main method in console applicaiton
+        static void ConstructorInjectionMain(string[] args)
         {
             //creating object
             Service1 service1 = new Service1();
