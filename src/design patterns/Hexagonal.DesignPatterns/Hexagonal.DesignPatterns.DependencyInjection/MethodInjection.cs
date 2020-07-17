@@ -38,7 +38,7 @@ namespace Hexagonal.DesignPatterns.DependencyInjection
 
     public class MethodInjection
     {
-        static void Main(string[] args)
+        static void MethodInjectionMain(string[] args)
         {
             //creating object
             Service5 service5 = new Service5();
