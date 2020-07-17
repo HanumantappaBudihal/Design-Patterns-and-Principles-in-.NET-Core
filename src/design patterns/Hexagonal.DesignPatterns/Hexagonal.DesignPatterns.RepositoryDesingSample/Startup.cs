@@ -27,8 +27,8 @@ namespace Hexagonal.DesignPatterns.RepositoryDesingSample
             // Register the db context configuration file
             services.AddDbContext<LearningContext>(ServiceLifetime.Transient);
 
-            services.AddTransient<IEmployee, Employee>();
-            services.AddTransient<IEmployeeRepository, EmployeeRepository>();
+            services.AddScoped<IEmployee, Employee>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {
