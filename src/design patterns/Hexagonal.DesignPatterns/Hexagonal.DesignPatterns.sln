@@ -43,7 +43,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sql", "sql", "{28E2D430-BA1
 		1.Employee.sql = 1.Employee.sql
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryDesingSample", "RepositoryDesingSample\RepositoryDesingSample.csproj", "{AAFFF676-5493-46D9-9463-3D85449D46C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.DesignPatterns.RepositoryDesingSample", "RepositoryDesingSample\Hexagonal.DesignPatterns.RepositoryDesingSample.csproj", "{AAFFF676-5493-46D9-9463-3D85449D46C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

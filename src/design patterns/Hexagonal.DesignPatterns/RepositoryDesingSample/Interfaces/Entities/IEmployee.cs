@@ -1,4 +1,4 @@
-﻿namespace RepositoryDesingSample.Interfaces.Entities
+﻿namespace Hexagonal.DesignPatterns.RepositoryDesingSample.Interfaces.Entities
 {
     public interface IEmployee
     {

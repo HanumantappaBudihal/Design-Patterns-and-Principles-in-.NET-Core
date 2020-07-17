@@ -4,13 +4,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using RepositoryDesingSample.Interfaces.Entities;
-using RepositoryDesingSample.Interfaces.Repository;
-using RepositoryDesingSample.Models;
-using RepositoryDesingSample.Models.Entities;
-using RepositoryDesingSample.Repository;
+using Hexagonal.DesignPatterns.RepositoryDesingSample.Interfaces.Entities;
+using Hexagonal.DesignPatterns.RepositoryDesingSample.Interfaces.Repository;
+using Hexagonal.DesignPatterns.RepositoryDesingSample.Models;
+using Hexagonal.DesignPatterns.RepositoryDesingSample.Models.Entities;
+using Hexagonal.DesignPatterns.RepositoryDesingSample.Repository;
 
-namespace RepositoryDesingSample
+namespace Hexagonal.DesignPatterns.RepositoryDesingSample
 {
     public class Startup
     {

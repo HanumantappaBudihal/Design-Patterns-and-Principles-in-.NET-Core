@@ -1,6 +1,6 @@
 using System;
 
-namespace RepositoryDesingSample.Models
+namespace Hexagonal.DesignPatterns.RepositoryDesingSample.Models
 {
     public class ErrorViewModel
     {

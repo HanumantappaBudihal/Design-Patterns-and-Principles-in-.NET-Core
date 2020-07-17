@@ -1,12 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RepositoryDesingSample.Interfaces.Entities;
-using RepositoryDesingSample.Interfaces.Repository;
-using RepositoryDesingSample.Models;
+using Hexagonal.DesignPatterns.RepositoryDesingSample.Interfaces.Entities;
+using Hexagonal.DesignPatterns.RepositoryDesingSample.Interfaces.Repository;
+using Hexagonal.DesignPatterns.RepositoryDesingSample.Models;
+using Hexagonal.DesignPatterns.RepositoryDesingSample.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace RepositoryDesingSample.Repository
+namespace Hexagonal.DesignPatterns.RepositoryDesingSample.Repository
 {
     public class EmployeeRepository : IEmployeeRepository
     {
@@ -28,7 +29,7 @@ namespace RepositoryDesingSample.Repository
 
         public void Insert(IEmployee employee)
         {
-            _learningContext.Employees.Add(employee);
+            _learningContext.Employees.Add((Employee)employee);
         }
         public void Update(IEmployee employee)
         {
@@ -37,7 +38,7 @@ namespace RepositoryDesingSample.Repository
         public void Delete(int EmployeeID)
         {
             IEmployee employee = _learningContext.Employees.Find(EmployeeID);
-            _learningContext.Employees.Remove(employee);
+            _learningContext.Employees.Remove((Employee)employee);
         }
 
         public void Save()

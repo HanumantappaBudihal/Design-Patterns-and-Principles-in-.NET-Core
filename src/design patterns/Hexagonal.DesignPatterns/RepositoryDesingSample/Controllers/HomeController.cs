@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc;
+using Hexagonal.DesignPatterns.RepositoryDesingSample.Models;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using RepositoryDesingSample.Models;
 
-namespace RepositoryDesingSample.Controllers
+namespace Hexagonal.DesignPatterns.RepositoryDesingSample.Controllers
 {
     public class HomeController : Controller
     {

@@ -1,9 +1,11 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using RepositoryDesingSample.Interfaces.Entities;
+using Hexagonal.DesignPatterns.RepositoryDesingSample.Interfaces.Entities;
+using Hexagonal.DesignPatterns.RepositoryDesingSample.Models.Configurations;
+using Hexagonal.DesignPatterns.RepositoryDesingSample.Models.Entities;
 
-namespace RepositoryDesingSample.Models
+namespace Hexagonal.DesignPatterns.RepositoryDesingSample.Models
 {
     public partial class LearningContext : DbContext
     {
@@ -16,35 +18,27 @@ namespace RepositoryDesingSample.Models
         {
         }
 
-        public virtual DbSet<IEmployee> Employees { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 optionsBuilder.UseSqlServer("Server=MSI\\LEARNING;Database=Learning;Trusted_Connection=True;");
             }
+
+            optionsBuilder.UseSqlServer("Server=MSI\\LEARNING;Database=Learning;Trusted_Connection=True;");
+            base.OnConfiguring(optionsBuilder);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<IEmployee>(entity =>
-            {
-                entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
+            base.OnModelCreating(modelBuilder);
 
-                entity.Property(e => e.Department)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Gender)
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Name)
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
-            });
+            //Learning
+            modelBuilder.ApplyConfiguration(new EmployeeEntityConfiguration());
         }
     }
 }

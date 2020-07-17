@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace RepositoryDesingSample
+namespace Hexagonal.DesignPatterns.RepositoryDesingSample
 {
     public class Program
     {

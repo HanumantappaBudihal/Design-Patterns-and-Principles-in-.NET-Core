@@ -1,7 +1,7 @@
-﻿using RepositoryDesingSample.Interfaces.Entities;
+﻿using Hexagonal.DesignPatterns.RepositoryDesingSample.Interfaces.Entities;
 using System.Collections.Generic;
 
-namespace RepositoryDesingSample.Interfaces.Repository
+namespace Hexagonal.DesignPatterns.RepositoryDesingSample.Interfaces.Repository
 {
     public interface IEmployeeRepository
     {

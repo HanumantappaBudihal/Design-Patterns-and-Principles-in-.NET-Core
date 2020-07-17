@@ -1,6 +1,6 @@
-﻿using RepositoryDesingSample.Interfaces.Entities;
+﻿using Hexagonal.DesignPatterns.RepositoryDesingSample.Interfaces.Entities;
 
-namespace RepositoryDesingSample.Models.Entities
+namespace Hexagonal.DesignPatterns.RepositoryDesingSample.Models.Entities
 {
     public partial class Employee : IEmployee
     {
