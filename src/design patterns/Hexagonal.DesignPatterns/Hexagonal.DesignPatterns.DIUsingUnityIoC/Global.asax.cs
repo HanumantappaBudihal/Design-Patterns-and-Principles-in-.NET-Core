@@ -16,6 +16,9 @@ namespace Hexagonal.DesignPatterns.DIUsingUnityIoC
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            //Setup DI
+            Bootstrapper.Initialise();
         }
     }
 }

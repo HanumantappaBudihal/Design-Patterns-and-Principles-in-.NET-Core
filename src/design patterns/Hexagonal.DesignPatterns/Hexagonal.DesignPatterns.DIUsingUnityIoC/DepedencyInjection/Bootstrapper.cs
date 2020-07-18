@@ -1,4 +1,6 @@
-﻿using Microsoft.Practices.Unity;
+﻿using Hexagonal.DesignPatterns.DIUsingUnityIoC.Interfaces;
+using Hexagonal.DesignPatterns.DIUsingUnityIoC.Models;
+using Microsoft.Practices.Unity;
 using System.Web.Mvc;
 using Unity.Mvc4;
 
@@ -24,6 +26,8 @@ namespace Hexagonal.DesignPatterns.DIUsingUnityIoC.DepedencyInjection
             // it is NOT necessary to register your controllers
 
             // e.g. container.RegisterType<ITestService, TestService>(); 
+            container.RegisterType<IProductRepository, ProductRepository>();
+            container.RegisterType<IProduct, Product>();
 
             RegisterTypes(container);
 
@@ -32,7 +36,7 @@ namespace Hexagonal.DesignPatterns.DIUsingUnityIoC.DepedencyInjection
 
         public static void RegisterTypes(IUnityContainer container)
         {
-
+            DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }
 }
